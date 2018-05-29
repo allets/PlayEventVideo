@@ -1,0 +1,23 @@
+<configuration debug="false">
+
+    <appender name="LOGCAT"
+        class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>%line [%thread] %msg</pattern>
+        </encoder>
+    </appender>
+
+    <!--<appender name="FILE"-->
+    <!--class="ch.qos.logback.core.FileAppender">-->
+    <!--<file>/sdcard/myapp/logs/debug.log</file>-->
+    <!--<encoder>-->
+    <!--<pattern>%date %-5level %logger{36} [%file:%line] [%thread] %msg%n-->
+    <!--</pattern>-->
+    <!--</encoder>-->
+    <!--</appender>-->
+
+    <root level="error">
+        <!--<appender-ref ref="LOGCAT" />-->
+        <!--<appender-ref ref="FILE" />-->
+    </root>
+</configuration>
